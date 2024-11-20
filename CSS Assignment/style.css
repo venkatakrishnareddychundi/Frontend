@@ -1,0 +1,25 @@
+p{
+    color:black;
+    background-color: yellow;
+}
+.classname{
+    color:blue;
+
+}
+#idname{
+   background-color: burlywood;
+}
+div p{
+    color:black;
+    background-color:rgb(212, 236, 31);
+}
+ul>li{
+    color:green;
+}
+input[type="text"]{
+    color:brown;
+}
+h2,h3,h4{
+    color:rgb(235, 27, 120);
+}
+
