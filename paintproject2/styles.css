@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  h1 {
+    margin: 20px 0;
+  }
+  
+  .toolbar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .toolbar button, .toolbar input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .toolbar button:hover {
+    background-color: #ddd;
+  }
+  
+  canvas {
+    border: 2px solid #000;
+    cursor: crosshair;
+    display: block;
+    margin: 0 auto;
+  }
+  

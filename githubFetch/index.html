@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+    <h1>Fetch user details</h1>
+    <input type="text" id="inputuser" placeholder="Enter your username">
+    <button onclick="fetchUserData()">Fetch</button>
+    </div>
+
+    <div id="userData>
+        <p id="name">Name:</p>
+    </div>
+    
+
+    <script>
+        function getGitHubUser(username){
+
+            let username=document.getElementById
+            const url=`https://api.github.com/users/${username}`;
+            
+            fetch(url)
+            .then(response => {
+            return response.json();
+             })
+            .then(userData =>{
+            console.log('GitHub User Data:', userData);
+            const username= document.getElementById(userData.name);
+            })
+            .catch(error => {
+            console.error('Failed to fetch GitHub user data:', error);
+            });
+         }
+         getGitHubUser("venkatakrishnareddychundi");
+
+    </script>
+   
+    
+</body>
+</html>

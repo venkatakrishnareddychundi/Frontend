@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var productsData=[
+            {
+                "id":1,
+                "name":"laptop",
+                "price":19999
+            },
+            {
+                "id":2,
+                "name":"mobile",
+                "price":9999
+            },
+            {
+                "id":3,
+                "name":"watch",
+                "price":999
+            }
+        ];
+        function fetchProduct(){
+            setTimeout(function() {
+              
+              var products = productsData; 
+             
+              var productList = document.createElement('ul');  
+              
+              products.forEach(function(product) {
+                  var listItem = document.createElement('li');
+                  listItem.textContent = `${product.name} - ${product.price}`;
+                  productList.appendChild(listItem);
+              });
+
+              document.body.appendChild(productList);  
+          }, 2000);  
+      }
+        
+    </script>
+</head>
+<body>
+    <h1>Product List</h1>
+    <button onclick="fetchProduct()">Fetch Products</button>
+</body>
+</html>
